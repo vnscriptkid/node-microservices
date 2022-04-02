@@ -6,12 +6,12 @@ dotenv.config();
 
 const kafka = new Kafka({
     clientId: process.env.KAFKA_CLIENT,
-    brokers: [process.env.KAFKA_BROKERS],
+    brokers: [process.env.KAFKA_BROKERS], // Bootstrap server
     ssl: true,
     sasl: {
         mechanism: 'plain',
-        username: process.env.KAFKA_USERNAME,
-        password: process.env.KAFKA_PASSWORD
+        username: process.env.KAFKA_USERNAME, // Key
+        password: process.env.KAFKA_PASSWORD // Secret
     }
 });
 
