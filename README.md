@@ -13,3 +13,6 @@ confluent kafka topic list
 confluent kafka topic produce test-topic
 confluent kafka topic consume -b test-topic
 ```
+
+## Kafka flow
+<img width="831" alt="image" src="https://user-images.githubusercontent.com/28957748/161388067-3c9106ea-1885-41e0-872f-9e4256fd80a4.png">
